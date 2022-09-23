@@ -1,8 +1,8 @@
 import face_recognition
 #load images
-person1=face_recognition.load_image_file(r"C:\Users\DELL\Documents\5th sem\machine learning projects\person1.jpg")
-person2=face_recognition.load_image_file(r"C:\Users\DELL\Documents\5th sem\machine learning projects\person2.jpg")
-person3=face_recognition.load_image_file(r"C:\Users\DELL\Documents\5th sem\machine learning projects\person4.jpg")
+person1=face_recognition.load_image_file(r"person1.jpg")
+person2=face_recognition.load_image_file(r"person2.jpg")
+person3=face_recognition.load_image_file(r"person4.jpg")
 
 #get face encoding of each person
 face1 = face_recognition.face_encodings(person1)[0]
