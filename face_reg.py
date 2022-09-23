@@ -2,8 +2,8 @@ import PIL.Image
 import PIL.ImageDraw
 import face_recognition #this gives an access to face detection model in dlib
 #load image file into numpy array using face recognition lib
-image = face_recognition.load_image_file(r"C:\Users\DELL\Documents\5th sem\machine learning projects\image.jpg")
-'''find all faces in the in the image by pretrained HOG face detector using face_recognition function'''
+image = face_recognition.load_image_file(r"images/person1.jpg")
+'''find all faces in the image by pretrained HOG face detector using face_recognition function'''
 face_recog = face_recognition.face_locations(image)
 no_of_faces = len(face_recog)
 print('total no. of faces are: ', no_of_faces)
