@@ -3,7 +3,7 @@ import PIL.ImageDraw
 import face_recognition
 from matplotlib.pyplot import fill #this gives an access to face detection model in dlib
 #load image file into numpy array using face recognition lib
-image = face_recognition.load_image_file(r"C:\Users\DELL\Documents\5th sem\machine learning projects\image.jpg")
+image = face_recognition.load_image_file(r"images/person1.jpg")
 face_recog = face_recognition.face_landmarks(image)
 no_of_faces = len(face_recog)
 print('total no. of faces are: ', no_of_faces)
